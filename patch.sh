@@ -43,6 +43,8 @@ codesign -f -s - hook.dylib
 echo "blah blah moving it to where it belongs"
 mv hook.dylib ..
 mv ../CrossOver ../CrossOver.o
+echo "gotta resign crossover as well because something about macos doing hardened runtime"
+codesign -f -s - ../CrossOver.o
 mv pco.sh ../CrossOver
 chmod +x ../CrossOver
 
