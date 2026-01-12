@@ -5,6 +5,12 @@ REPO_URL="https://github.com/totallynotinteresting/crossover.git"
 RAW_URL="https://raw.githubusercontent.com/totallynotinteresting/crossover/main"
 RELEASE_URL="https://github.com/totallynotinteresting/crossover/releases/latest/download/hook.dylib"
 
+if [ ! -d "$CROSSOVER_MACOS_PATH" ]; then
+    echo "CrossOver.app was not found at $CROSSOVER_MACOS_PATH"
+    echo "please make sure that CrossOver.app is in /Applications/"
+    exit 1
+fi
+
 cd "$CROSSOVER_MACOS_PATH" || exit 1
 
 if git clone "$REPO_URL" crossover_patch; then
