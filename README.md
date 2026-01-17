@@ -13,10 +13,8 @@ uhh i'll make an uninstaller sometime when i can remember to
 
 to codeweavers: dont charge so much for reskinned wine and this wouldnt happen
 
+license: 
 
-
-
-
-
+this project is licensed under the [totally not interesting license](LICENSE). basically: use it however you want, but you **must** credit me. dont be a jerk.
 
 [p.s this is most definitely a crossover crack, and probably the best one out there atm]: # 
