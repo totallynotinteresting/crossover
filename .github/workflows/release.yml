@@ -16,7 +16,7 @@ jobs:
 
       - name: Build hook.dylib
         run: |
-          clang -dynamiclib -framework Foundation -framework AppKit -o hook.dylib hook.m
+          clang -dynamiclib -arch arm64 -arch x86_64 -framework Foundation -framework AppKit -o hook.dylib hook.m
 
       - name: Ad-hoc codesign
         run: |

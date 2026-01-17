@@ -1,3 +1,6 @@
 #!/bin/bash
-cd "$(dirname "$0")"
-DYLD_INSERT_LIBRARIES=hook.dylib ./CrossOver.o
+DIR="$(cd "$(dirname "$0")" && pwd)"
+
+cp "$DIR/hook.dylib" "/tmp/hook.dylib"
+
+DYLD_INSERT_LIBRARIES="/tmp/hook.dylib" "$DIR/CrossOver.o" "$@"
