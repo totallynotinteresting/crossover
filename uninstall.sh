@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "Where is CrossOver.app? [/Applications/CrossOver.app]: " USER_PATH
+read -p "Where is CrossOver.app? [/Applications/CrossOver.app]: " USER_PATH < /dev/tty
 APP_PATH="${USER_PATH:-/Applications/CrossOver.app}"
 CROSSOVER_MACOS_PATH="$APP_PATH/Contents/MacOS"
 if [ ! -d "$CROSSOVER_MACOS_PATH" ]; then
