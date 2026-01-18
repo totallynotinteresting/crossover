@@ -4,7 +4,8 @@
 
 set -e
 
-APP_PATH="/Applications/CrossOver.app"
+read -p "Where is CrossOver.app? [/Applications/CrossOver.app]: " USER_PATH
+APP_PATH="${USER_PATH:-/Applications/CrossOver.app}"
 CONTENTS_PATH="$APP_PATH/Contents"
 MACOS_PATH="$CONTENTS_PATH/MacOS"
 SHARED_SUPPORT="$CONTENTS_PATH/SharedSupport/CrossOver"

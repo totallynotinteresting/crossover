@@ -1,7 +1,9 @@
 #!/bin/bash
-CROSSOVER_MACOS_PATH="/Applications/CrossOver.app/Contents/MacOS"
+read -p "Where is CrossOver.app? [/Applications/CrossOver.app]: " USER_PATH
+APP_PATH="${USER_PATH:-/Applications/CrossOver.app}"
+CROSSOVER_MACOS_PATH="$APP_PATH/Contents/MacOS"
 if [ ! -d "$CROSSOVER_MACOS_PATH" ]; then
-    echo "CrossOver.app wasnt found in /Applications. nthing to uninstall (or you moved it)."
+    echo "CrossOver.app wasnt found at $APP_PATH. nthing to uninstall (or you moved it)."
     exit 1
 fi
 
