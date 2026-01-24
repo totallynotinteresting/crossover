@@ -18,3 +18,9 @@ license:
 this project is licensed under the [totally not interesting license](LICENSE). basically: use it however you want, but you **must** credit me. dont be a jerk.
 
 [p.s this is most definitely a crossover crack, and probably the best one out there atm]: # 
+
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=totallynotinteresting/crossover&type=date&legend=top-left)](https://www.star-history.com/#totallynotinteresting/crossover&type=date&legend=top-left)
